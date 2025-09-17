@@ -6,7 +6,9 @@
 #define NEBULA_NEBULA_H
 
 #include <jvmti.h>
+#include <Modules/Module.h>
 #include <vector>
+#include <memory>
 
 class Nebula {
 public:
@@ -22,6 +24,7 @@ public:
 
 private:
     bool running;
+std::vector<std::unique_ptr<Module>> modules;
     JavaVM* jvm;
     JNIEnv* env;
 };

@@ -9,6 +9,7 @@
 #include "mapping/impl/net/minecraft/client/Minecraft.h"
 #include <net/minecraft/client/multiplayer/WorldClient.h>
 #include <net/minecraft/entity/EntityPlayerSP.h>
+#include "Modules/AutoClicker.h"
 
 Nebula::Nebula() {
     running = false;
@@ -27,6 +28,8 @@ Nebula::Nebula() {
 
     // Mapping setup
     Mapping::setup();
+
+ modules.push_back(std::make_unique<AutoClicker>());
 }
 
 void Nebula::runClient() {
