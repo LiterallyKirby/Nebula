@@ -1,0 +1,38 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-fPIC",
+      "-O2",
+      "-I/usr/lib/jvm/java-8-openjdk/include",
+      "-I/usr/lib/jvm/java-8-openjdk/include/linux",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "src/jni_wrapper.o",
+      "src/jni_wrapper.c"
+    ],
+    "directory": "/home/kirby/Programming/Nebula/NebulaJNIC",
+    "file": "/home/kirby/Programming/Nebula/NebulaJNIC/src/jni_wrapper.c",
+    "output": "/home/kirby/Programming/Nebula/NebulaJNIC/src/jni_wrapper.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-fPIC",
+      "-O2",
+      "-I/usr/lib/jvm/java-8-openjdk/include",
+      "-I/usr/lib/jvm/java-8-openjdk/include/linux",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "src/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/kirby/Programming/Nebula/NebulaJNIC",
+    "file": "/home/kirby/Programming/Nebula/NebulaJNIC/src/main.c",
+    "output": "/home/kirby/Programming/Nebula/NebulaJNIC/src/main.o"
+  }
+]
